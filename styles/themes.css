@@ -4,3 +4,61 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  background-color: var(--background-color-main);
+  color: var(--accent-color);
+  --main-font-weight-card: 400;
+  --font-weight-heading-card: 700;
+  --page-background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --text-stroke-color: #fff;
+  --button-text-color: #fff;
+}
+
+:root.theme-dark {
+  --accent-color: #00cc14;
+  --background-color-main: #000;
+  --page-background-image: repeating-linear-gradient(
+      to left,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  background-color: var(--background-color-main);
+  color: var(--accent-color);
+  --main-font-weight-card: 465;
+  --font-weight-heading-card: 785;
+  background-image: var(--page-background-image);
+  --text-stroke-color: #666;
+  --like-contour-color: #00cc14;
+  --button-text-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #00cc14;
+    --background-color-main: #000;
+    --page-background-image: repeating-linear-gradient(
+        to left,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+    background-color: var(--background-color-main);
+    color: var(--accent-color);
+    --main-font-weight-card: 465;
+    --font-weight-heading-card: 785;
+    background-image: var(--page-background-image);
+    --text-stroke-color: #666;
+    --button-text-color: #00cc14;
+    --like-contour-color: #00cc14;
+  }
+}

@@ -1,0 +1,24 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+:root {
+    --color-black: #000;
+    --color-green: #00cc14;
+      fill: var(--color-black);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+   fill: var(--color-black);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+   fill: var(--color-green);
+  }
+}
+
+</style>
+  <path fill="var(--color-black)" d="M128 128h32v32h-32v-32Zm-32 0V96h32v32H96Zm0 0v32H64v-32h32Zm96-64h-32v32h32V64Z"/>
+  <path fill="var(--color-black)" fill-rule="evenodd" d="M0 0v256h256V0H0Zm224 224h-64v-32h32v-32h32v64Zm-64-64h32v-32h32V32H32v128h32v32H32v32h96v-32h32v-32Z" clip-rule="evenodd"/>
+</svg>
