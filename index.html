@@ -19,9 +19,9 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header header__logo card">
-      <h1 class="header__logo__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__logo__subtitle">закрывающий тег</h2>
+    <header class="header card">
+      <div class="logo__page">&lt;/HTML&gt;</div>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -51,31 +51,34 @@
 
     <main class="card__content">
       <!-- первая секция- подготовительный спринт -->
-      <section class="card__content__section__preparation card">
-        <h2 class="card__content__section__title">
+      <article class="card">
+        <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;preparation&gt;</span>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">
+            &lt;preparation&gt;
+          </figcaption>
           <img
             class="card__imges filter-brightness"
             src="https://media.giphy.com/media/Wp0ZtQjgViqR2/giphy.gif?cid=790b7611qfawzhlke1sp5w6aaszyx0nqla32cezu1e7pg32n&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="GIF: харли квин читает"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
-          <p class="memory">
+          <p>
             Нуууссс начнем, впереди ждет много интересного и увлекательного!
           </p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -110,41 +113,44 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_one"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- вторая секция-1спринт-чистый лист -->
-      <section class="card__content__section__blank__sheet card card__return">
-        <h2 class="card__content__section__title">1 спринт: Я — чистый лист</h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;blank__sheet&gt;</span>
+      <article class="card">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">
+            &lt;blank__sheet&gt;
+          </figcaption>
           <img
             class="card__imges filter-grayscale"
             src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemZ5MXkwdDZtcmRlanF0cHIybW52c2h1dW5nc2g4OG9qMmY1ZHN1eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/14ut8PhnIwzros/giphy.gif"
             alt="спанч боб -боится"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них —страх перед чистым листом. Это,
             конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим
             ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
             будет слишком сложно? что, если я не справлюсь?
           </p>
-          <p class="memory">
-            Почему все так сложно и непонятно. Эмоциональные качели начали
-            раскачиваться...
+          <p>
+            Почему все так сложно и непонятно... Эмоциональные качели начали
+            раскачиваться... Страх чистого листа оказался явью.
           </p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -179,38 +185,40 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_two"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- третья секция-1 спринт-страх -->
-      <section class="card__content__section__fear card card__return">
-        <h2 class="card__content__section__title">
-          1 спринт: А если не получится?
-        </h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;fear&gt;</span>
+      <article class="card">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">&lt;fear&gt;</figcaption>
           <img
             class="card__imges filter-saturate"
             src="https://media.giphy.com/media/26u4exk4zsAqPcq08/giphy.gif?cid=ecf05e471yjqq35knazga63jbkxfse73d25ww47bjfd4tyf4&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="девушка-победитель"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
             наоборот, могли вдохновиться успехами и поверить в себя.
           </p>
-          <p class="memory">Фууууххх все оказалось не таким и страшным.</p>
+          <p>
+            Фууууххх все оказалось не таким и страшным. Или если долго мучаться,
+            что-нибудь получится..
+          </p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -245,40 +253,39 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_three"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- четвертая секция-погоня за идеалом 2 спринт -->
-      <section class="card__content__section__ideal card card__return">
-        <h2 class="card__content__section__title">
-          2 спринт: Погоня за идеалом
-        </h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;/ideal&gt;</span>
+      <article class="card">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">&lt;/ideal&gt;</figcaption>
           <img
             class="card__imges filter-hue-rotate"
             src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2hoaTE4eXdvenVwZXZiMW40bnAweHM0eGJrbXU2amVsZ3pjamFlaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/toXKzaJP3WIgM/giphy.gif"
             alt="джим керри печатает"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
             идеалом и понять, что он недостижим. А, может, вы вовсе и не
             подвержены перфекционизму и вместо того, чтобы сделать идеально,
             старались просто сделать.
           </p>
-          <p class="memory">Все должно быть пиксель в пиксель...</p>
+          <p>Все должно быть пиксель в пиксель...</p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -313,29 +320,28 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_four"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- пятая секция-2спринт-о тех кто рядом -->
-      <section class="card__content__section__support card card__return">
-        <h2 class="card__content__section__title">
-          2 спринт: О тех, кто рядом
-        </h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">support</span>
+      <article class="card">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">support</figcaption>
           <img
             class="card__imges filter-sepia"
             src="https://media.giphy.com/media/TgQCVpkQSZ81G/giphy.gif?cid=790b7611jfuwwhvftkc4uxr2snamge8t3717etfis5yo620s&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="вин дизель и его поддержка"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
             одногруппники, команда сопровождения и просто близкие люди, которым
@@ -343,11 +349,11 @@
             Осваивать что-то новое легче, когда рядом есть единомышленники, не
             правда ли?
           </p>
-          <p class="memory">Самое важное.. это семья.</p>
+          <p>Самое важное.. это семья.</p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -382,41 +388,40 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_five"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- шестая секция-3спринт-обходные стратегии -->
-      <section class="card__content__section__difficulty card card__return">
-        <h2 class="card__content__section__title">
-          3 спринт: Обходные стратегии
-        </h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;difficulty&gt;</span>
+      <article class="card">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">&lt;difficulty&gt;</figcaption>
           <img
             class="card__imges filter-multiple"
             src="https://media.giphy.com/media/1zL7bm3xomm5R5PfRH/giphy.gif?cid=ecf05e47r2j2zutai7b1sfo89eglt1hizsj6bohuj3wpuhfb&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="собака собирает пазл"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
             время посмотреть на задачу под другим углом.
           </p>
-          <p class="memory">
+          <p>
             Просто иногда нужно отложить задачу в сторону и вернуться к ней
             позже, решение придет внезапно. Не забывай про отдых.
           </p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -451,36 +456,37 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_six"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- седьмая секция-3спринт-когда отпускаются руки -->
-      <section class="card__content__section__concentration card card__return">
-        <h2 class="card__content__section__title">
-          3 спринт: Когда опускаются руки
-        </h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;concentration&gt;</span>
+      <article class="card">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">
+            &lt;concentration&gt;
+          </figcaption>
           <img
             class="card__imges filter-drop-shadow"
             src="https://media.giphy.com/media/Nl2J6tMCMs1pe/giphy.gif?cid=ecf05e473j6h5cra8dci9vp2ahn0b8cbql47epc3b8grthbt&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="Мишень и дротики"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
             порешать, и в теории получше разобраться, и жизнь не забыть пожить.
             В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
           </p>
-          <p class="memory">
+          <p>
             Есть цель? Беги к ней! Не получается бежать - иди к ней! Не
             получается идти - ползи к ней! Не можешь ползти? Тогда ляг и лежи в
             направлении цели!
@@ -488,7 +494,7 @@
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -523,27 +529,28 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_seven"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
       <!-- восьмая секция-сейчас я здесь -->
-      <section class="card__content__section__cognition card card__return">
-        <h2 class="card__content__section__title">«Сейчас я здесь»</h2>
-        <div class="card__imges__wrapper">
-          <span class="card__imges__label">&lt;cognition&gt;</span>
+      <article class="card">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <figure class="card__imges__wrapper">
+          <figcaption class="card__imges__label">&lt;cognition&gt;</figcaption>
           <img
             class="card__imges filter-invert"
             src="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif?cid=ecf05e472wwo4rgj569tq1008zzk6fe8yhi88f48n4p5i01s&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="миньены хлопают в ладошки"
+            loading="lazy"
           />
-        </div>
-        <div class="card__content__section__text">
-          <p class="text">
+        </figure>
+        <div class="card__text">
+          <p>
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
             окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И
@@ -551,13 +558,11 @@
             это тот случай, когда важен сам процесс познания. Ведь часто путь —
             и есть результат.
           </p>
-          <p class="memory">
-            Время себя похвалить, молодец! И немножко отдохнуть.
-          </p>
+          <p>Время себя похвалить, молодец! И немножко отдохнуть.</p>
         </div>
         <div class="button__card">
           <button
-            aria-labelledby="button__like"
+            aria-label="button__like"
             type="button"
             class="card__icon-button"
           >
@@ -592,14 +597,14 @@
             </svg>
           </button>
           <button
-            id="button__like"
+            id="button__like_eight"
             type="button"
             class="button card__like-button"
           >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
     </main>
     <footer class="footer modal__window">
       <button
@@ -619,7 +624,7 @@
           <svg class="modal__icon" viewBox="0 0 29 28">
             <use href="svg/image-diskette.svg#image-diskette" />
           </svg>
-          <p>Вставьте дискету,чтобы продолжить</p>
+          <h3 class="modal__title">Вставьте дискету,чтобы продолжить</h3>
         </div>
         <form method="dialog">
           <button type="submit" class="button modal__button">
