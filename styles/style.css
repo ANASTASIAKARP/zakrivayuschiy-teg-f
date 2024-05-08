@@ -197,7 +197,7 @@
   display: flex;
   justify-content: end;
   align-items: stretch;
-  padding: 0 25px 25px 0;
+  padding: 0 25px 23px 0;
   border-bottom: 0px solid var(--accent-color);
   gap: 0;
 }
@@ -208,6 +208,7 @@
   border: 2px solid transparent;
   background: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
 .card__icon-button:focus {
@@ -227,6 +228,7 @@
 
 .card__like-button {
   min-width: 130px;
+  padding: 0;
 }
 
 /*кнопка like*/
@@ -280,6 +282,8 @@
 .button__icon {
   block-size: 22px;
   inline-size: 22px;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 .footer {
@@ -344,9 +348,10 @@
 
 .modal__title {
   text-transform: uppercase;
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
+  padding-top: 12px;
+  /* padding-bottom: 12px; */
   font-family: var(--accent-font-famil);
+  font-size: 14px;
 }
 
 @media (width <= 375px) {
@@ -376,7 +381,7 @@
   }
 
   .modal {
-    padding: 28px 20px 28px 16px;
+    padding: 30px 40px;
     max-inline-size: 340px;
   }
 

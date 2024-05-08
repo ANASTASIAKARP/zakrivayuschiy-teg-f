@@ -6,7 +6,8 @@
 */
 
 :root.theme-light {
-  /* background-color: var(--background-color-main); */
+  --background-color-main: #fff;
+  --accent-color:  #000;
   color: var(--accent-color);
   --main-font-weight-card: 400;
   --font-weight-heading-card: 700;
